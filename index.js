@@ -47,8 +47,8 @@ const mainKeyboard = {
 
 bot.launch()
 
-//expressApp.use(bot.webhookCallback('/secret-path'))
-//bot.telegram.setWebhook('https://bot-b8n9.onrender.com/secret-path')
+expressApp.use(bot.webhookCallback('/'))
+bot.telegram.setWebhook('https://bot-b8n9.onrender.com')
 
 
 expressApp.listen(port, () => console.log(`Listening on ${port}`));
