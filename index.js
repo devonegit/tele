@@ -45,10 +45,19 @@ const mainKeyboard = {
 
 
 
-bot.launch()
 
-expressApp.use(bot.webhookCallback('/'))
-bot.telegram.setWebhook('https://bot-b8n9.onrender.com')
+bot.launch({
+  webhook: {
+    domain: 'https://bot-b8n9.onrender.com',
+    port: port
+  }
+})
+
+
+// bot.launch()
+
+// expressApp.use(bot.webhookCallback('/'))
+// bot.telegram.setWebhook('https://bot-b8n9.onrender.com')
 
 
 expressApp.listen(port, () => console.log(`Listening on ${port}`));
