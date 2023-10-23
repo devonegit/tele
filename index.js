@@ -42,7 +42,7 @@ const bot = new Telegraf(process.env.TOKEN);
 //   bot.launch()
 
 expressApp.use(bot.webhookCallback('/secret-path'))
-bot.telegram.setWebhook('https://telegraf-f72j.onrender.com/secret-path')
+bot.telegram.setWebhook('https://bot-b8n9.onrender.com/secret-path')
 
 
 expressApp.listen(port, () => console.log(`Listening on ${port}`));
