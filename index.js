@@ -51,11 +51,8 @@ bot.launch({
     domain: 'https://bot-b8n9.onrender.com/',
 
     // Port to listen on; e.g.: 8080
-    port: port,
+    port: port
 
-    // Optional secret to be sent back in a header for security.
-    // e.g.: `crypto.randomBytes(64).toString("hex")`
-    secretToken: 408727,
   },
 });
 
