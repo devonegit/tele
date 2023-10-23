@@ -62,7 +62,7 @@ bot.launch({
 // bot.launch()
 
 // expressApp.use(bot.webhookCallback('/'))
-bot.telegram.setWebhook('https://api.render.com/deploy/srv-ckr3e6e2eoec73cscf40?key=9kA0ItqGeJc')
+// bot.telegram.setWebhook('https://api.render.com/deploy/srv-ckr3e6e2eoec73cscf40?key=9kA0ItqGeJc')
 
 
 expressApp.listen(port, () => console.log(`Listening on ${port}`));
