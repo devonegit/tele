@@ -10,17 +10,23 @@ require('dotenv').config();
 const { Telegraf } = require('telegraf');
 
 const bot = new Telegraf(process.env.TOKEN);
+const mainKeyboard = {
+  reply_markup: {
+    keyboard: [
+      ["Inventory System", "Collection System"],
+      ["Attendance System", "Employee Score"],
+    ],
+    resize_keyboard: true,
+    one_time_keyboard: true,
+  },
+};
 
-// expressApp.get("/", (req, res) => {
-//     res.sendFile(path.join(__dirname + '/index.html'));
-//   });
   
 
 
   bot.command('start', ctx => {
     console.log(ctx.from)
-    bot.telegram.sendMessage(ctx.chat.id, 'Hello there! Welcome to the Code Capsules telegram bot.\nI respond to /ethereum. Please try it', {
-    })
+    bot.telegram.sendMessage(ctx.chat.id, 'Hello there! Welcome to the Code Capsules telegram bot.\nI respond to /ethereum. Please try it', mainKeyboard)
   })
   
   bot.command('ethereum', ctx => {
