@@ -39,7 +39,7 @@ const bot = new Telegraf(process.env.TOKEN);
 
 
 
-//   bot.launch()
+bot.launch()
 
 expressApp.use(bot.webhookCallback('/secret-path'))
 bot.telegram.setWebhook('https://bot-b8n9.onrender.com/secret-path')
