@@ -45,14 +45,19 @@ const mainKeyboard = {
 
 
 
+bot.launch({
+  webhook: {
+    // Public domain for webhook; e.g.: example.com
+    domain: 'https://bot-b8n9.onrender.com/',
 
-// bot.launch({
-//   webhook: {
-//     domain: 'https://bot-b8n9.onrender.com',
-//     port: port
-//   }
-// })
+    // Port to listen on; e.g.: 8080
+    port: port,
 
+    // Optional secret to be sent back in a header for security.
+    // e.g.: `crypto.randomBytes(64).toString("hex")`
+    secretToken: 408727,
+  },
+});
 
 // bot.launch()
 
