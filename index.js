@@ -45,18 +45,18 @@ const mainKeyboard = {
 
 
 
-bot.launch({
-  webhook: {
-    // Public domain for webhook; e.g.: example.com
-    domain: 'https://bot-b8n9.onrender.com/',
+// bot.launch({
+//   webhook: {
+//     // Public domain for webhook; e.g.: example.com
+//     domain: 'https://bot-b8n9.onrender.com/',
 
-    // Port to listen on; e.g.: 8080
-    port: port
+//     // Port to listen on; e.g.: 8080
+//     port: port
 
-  },
-});
+//   },
+// });
 
-// bot.launch()
+bot.launch()
 
 // expressApp.use(bot.webhookCallback('/'))
 // bot.telegram.setWebhook('https://api.render.com/deploy/srv-ckr3e6e2eoec73cscf40?key=9kA0ItqGeJc')
